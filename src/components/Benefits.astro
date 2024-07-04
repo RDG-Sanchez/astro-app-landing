@@ -1,0 +1,48 @@
+---
+import BenefitsCard from "./BenefitsCard.astro";
+
+const benefits = [
+  {
+    title: "Availability",
+    image:
+      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351649/assets/7f/fcf08b-da91-4f61-9d6b-e2d004584b0d/original/availability.svg",
+    description:
+      "You can request a delivery in the same way you request a ride.",
+  },
+  {
+    title: "Speed",
+    image:
+      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351817/assets/5e/280cbc-6732-4e72-9d15-641eeb048f20/original/speed.svg",
+    description: "Get on-demand delivery, usually within an hour.",
+  },
+  {
+    title: "Follow-up",
+    image:
+      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351830/assets/be/d320e8-c093-44cf-b857-1afa3224a443/original/tracking.svg",
+    description:
+      "Watch the item as it heads to the recipient and receive a notification when it is delivered.",
+  },
+];
+---
+
+<section class="mx-12 my-10 flex flex-col items-center">
+  <div class="w-full">
+    <h1 class="text-primary text-4xl font-bold">DeliverY Benefits</h1>
+  </div>
+
+  <div class="grid grid-cols-3 gap-10 mt-10">
+    {
+      benefits.map((benefit) => (
+        <BenefitsCard
+          title={benefit.title}
+          image={benefit.image}
+          description={benefit.description}
+        />
+      ))
+    }
+  </div>
+
+  <a class="font-bold bg-accent px-6 py-3 rounded-full mt-10" href=""
+    >And more than 50 other destinations</a
+  >
+</section>
