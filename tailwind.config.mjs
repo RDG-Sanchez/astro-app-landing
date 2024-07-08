@@ -7,10 +7,13 @@ export default {
         primary: "#181a1b",
         secondary: "#f4f5f6",
         accent: "#54ea54",
+        user_green: "#bbf99e",
+        user_violet: "#ccbafe",
+        user_blue: "#a5e4f9",
       },
       dropShadow: {
-        md: "0 3px 6px rgb(0 0 0 / 0.07)"
-      }
+        md: "0 3px 6px rgb(0 0 0 / 0.07)",
+      },
     },
   },
   plugins: [],

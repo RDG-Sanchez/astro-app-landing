@@ -3,9 +3,18 @@ const { title, image, description } = Astro.props;
 ---
 
 <article class="flex flex-col gap-4 items-center">
-  <figure class="w-32 h-32">
-    <img class="w-full" src={image} alt="" />
+  <figure class="relative w-full h-64">
+    <img
+      class="object-cover object-center w-full h-full rounded-3xl"
+      src={image}
+      alt=""
+    />
+    <a
+      class="bg-white font-bold text-black rounded-full absolute px-4 py-2 m-4 top-0"
+      href="">Try it now</a
+    >
   </figure>
+
   <div>
     <h1 class="font-semibold text-2xl">{title}</h1>
     <p>{description}</p>

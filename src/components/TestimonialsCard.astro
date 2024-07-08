@@ -1,0 +1,22 @@
+---
+const {
+  body,
+  user: { avatar, name, position, color },
+} = Astro.props;
+---
+
+<div
+  class=`w-full h-64 flex flex-col justify-between ${color === "user_green" ? "bg-user_green" : color === "user_violet" ? "bg-user_violet" : color === "user_blue" ? "bg-user_blue" : "bg-white"} rounded-3xl p-4`
+>
+  <p class="font-bold">{body}</p>
+  <div class="flex gap-2 items-center">
+    <figure>
+      <img class="h-10 w-10 rounded-full" src={avatar} alt={name} />
+    </figure>
+    <div>
+      <h2 class="font-semibold text-sm">{name}</h2><span
+        class="font-semibold text-sm">{position}</span
+      >
+    </div>
+  </div>
+</div>

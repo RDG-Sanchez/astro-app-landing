@@ -1,0 +1,118 @@
+---
+import Light from "../icons/Light.astro";
+import Speed from "../icons/Speed.astro";
+import Star from "../icons/Star.astro";
+---
+
+<section class="bg-[#121212] rounded-3xl mx-6">
+  <div class="px-24 pt-16">
+    <h1 class="text-white text-4xl font-bold mb-10">
+      Choose your favorite plan
+    </h1>
+    <table class="w-full flex flex-col">
+      <tr
+        class="bg-[#151515] flex items-center justify-between py-4 px-4 rounded-xl"
+      >
+        <th class="text-white text-start text-lg w-1/2">Subscription level</th>
+        <th
+          class="font-bold text-black px-4 py-2 rounded-xl bg-[#bbf99e] text-start mr-4 flex gap-2 flex-1 items-center justify-between"
+          >Basic <Light class="w-5 h-5 fill-white" /></th
+        >
+        <th
+          class="font-bold text-black px-4 py-2 rounded-xl bg-[#ccbafe] text-start mr-4 flex gap-2 flex-1 items-center justify-between"
+          >Advanced <Speed class="w-5 h-5 fill-white" /></th
+        >
+        <th
+          class="font-bold text-black px-4 py-2 rounded-xl bg-[#edd087] text-start flex gap-2 flex-1 items-center justify-between"
+          >Premium <Star class="w-5 h-5 fill-white" /></th
+        >
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2">Number of Users</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">1</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Up to 5</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Unlimited</td>
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2">Custommer Support</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Online</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Priority</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Premium</td>
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2">Monthly Requests</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">1000</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">5000</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Unlimited</td>
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2">Data Packages</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">1 GB</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">5 GB</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">10 GB</td>
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2"
+          >Flexible Cancellation</td
+        >
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Unlimited</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Unlimited</td>
+        <td class="text-white px-4 py-2 text-start mr-4 flex-1">Unlimited</td>
+      </tr>
+      <tr
+        class="flex items-center justify-between py-3 px-4 border-b-2 border-white/5"
+      >
+        <td class="text-white text-start text-lg w-1/2">Monthly Cost</td>
+        <td
+          class="text-white text-2xl font-bold px-4 py-2 text-start mr-4 flex-1"
+          >$9.99</td
+        >
+        <td
+          class="text-white text-2xl font-bold px-4 py-2 text-start mr-4 flex-1"
+          >$19.99</td
+        >
+        <td
+          class="text-white text-2xl font-bold px-4 py-2 text-start mr-4 flex-1"
+          >$39.999</td
+        >
+      </tr>
+    </table>
+  </div>
+  <div
+    class="w-full px-16 pt-16 text-white flex flex-row gap-10 items-center justify-between"
+  >
+    <div>
+      <h2 class="font-bold text-5xl mb-4">Try it right now</h2>
+      <p class="mb-4">
+        Download the AI Ally on the AppStore and Google Play and discover the
+        world of artificial intelligence! Enjoy innovate AI technologies
+        directly on your device.
+      </p>
+      <div class="flex gap-4 items-center">
+        <img
+          class="w-48"
+          src="/src/assets/badge-play-store.svg"
+          alt=""
+        />
+        <img
+          class="w-[10rem]"
+          src="/src/assets/badge-app-store.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <figure>
+      <img class="" src="/src/assets/iphone-app-view-short.webp" alt="" />
+    </figure>
+  </div>
+</section>

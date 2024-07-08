@@ -1,33 +1,48 @@
 ---
+import ArrowUpRight from "../icons/ArrowUpRight.astro";
 import BenefitsCard from "./BenefitsCard.astro";
 
 const benefits = [
   {
-    title: "Availability",
-    image:
-      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351649/assets/7f/fcf08b-da91-4f61-9d6b-e2d004584b0d/original/availability.svg",
+    title: "Students",
+    image: "/src/assets/1.jpg",
     description:
-      "You can request a delivery in the same way you request a ride.",
+      "AI Ally can assits in research, provide learning materials, and answer questions",
   },
   {
-    title: "Speed",
-    image:
-      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351817/assets/5e/280cbc-6732-4e72-9d15-641eeb048f20/original/speed.svg",
-    description: "Get on-demand delivery, usually within an hour.",
+    title: "Professionals",
+    image: "/src/assets/2.webp",
+    description:
+      "AI Ally can provide quick access to relevant information and offer data analysis insights",
   },
   {
-    title: "Follow-up",
-    image:
-      "https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1635351830/assets/be/d320e8-c093-44cf-b857-1afa3224a443/original/tracking.svg",
+    title: "Writers",
+    image: "/src/assets/3.jpg",
     description:
-      "Watch the item as it heads to the recipient and receive a notification when it is delivered.",
+      "AI Ally can help writers by generating ideas, suggesting improvements in writing style",
   },
 ];
 ---
 
 <section class="mx-12 my-10 flex flex-col items-center">
   <div class="w-full">
-    <h1 class="text-primary text-4xl font-bold">DeliverY Benefits</h1>
+    <h1 class="text-primary text-4xl font-bold">Different destinations</h1>
+  </div>
+
+  <div class="grid grid-cols-3 gap-10 mt-5 items-start">
+    <span
+      >We explore the diverse ways in which this technology can revolutionize
+      work across various industries and fields.</span
+    >
+    <span
+      >Dusciver how AI can streamline processes and elevate your work to new
+      heights.</span
+    >
+    <a class="group font-bold flex items-center gap-2 justify-end" href=""
+      >Discover all applications <ArrowUpRight
+        class="w-5 h-5 group-hover:rotate-45 transition-all"
+      /></a
+    >
   </div>
 
   <div class="grid grid-cols-3 gap-10 mt-10">
@@ -42,7 +57,8 @@ const benefits = [
     }
   </div>
 
-  <a class="font-bold bg-accent px-6 py-3 rounded-full mt-10" href=""
-    >And more than 50 other destinations</a
+  <a
+    class="font-bold bg-accent px-6 py-3 rounded-full mt-10 hover:bg-accent/95 transition-all"
+    href="">And more than 50 other destinations</a
   >
 </section>
